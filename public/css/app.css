@@ -1,0 +1,199 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);section.buy-section {
+  background-color: #0282f9;
+  width: 100%;
+}
+
+section.buy-section ul {
+  display: flex;
+  justify-content: center;
+}
+
+section.buy-section li {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+
+section.buy-section li img {
+  max-width: 35px;
+  margin-right: 15px;
+}
+
+section.buy-section li p {
+  text-transform: uppercase;
+  color: white;
+}
+
+.footer-list {
+  background-image: url(/images/footer-bg.jpg?dfd68d2946f211e1b678af05fd2f830b);
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  height: 450px;
+  overflow: hidden;
+}
+
+.footer-list img {
+  margin-left: 200px;
+  height: 550px;
+  margin-left: 200px;
+  overflow: hidden;
+  position: relative;
+  bottom: 90px;
+}
+
+.footer-list h2 {
+  color: white;
+  margin-left: 10px;
+}
+
+.footer-list ul {
+  margin-right: 20px;
+}
+
+.footer-list li {
+  color: grey;
+  list-style: none;
+  margin: 10px;
+}
+
+.bottom {
+  background-color: #303030;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px;
+  height: 120px;
+}
+
+.bottom h2 {
+  color: white;
+}
+
+.bottom button {
+  padding: 20px;
+  background: none;
+  border: 1px solid #0282f9;
+  color: white;
+  text-transform: uppercase;
+}
+
+.bottom .social {
+  display: flex;
+  align-items: center;
+}
+
+.bottom .social h2,
+.bottom .social img {
+  margin-right: 20px;
+}
+
+.bottom .social h2 {
+  color: #2d4ac5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.jumbotron {
+  width: 100%;
+  height: 50vh;
+  background-image: url(/images/jumbotron.jpg?1b0a3671766964a4114f90322970b124);
+  background-size: cover;
+}
+
+main {
+  display: flex;
+  background-color: #1c1c1c;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main h2,
+main h3 {
+  background-color: #0282f9;
+  color: white;
+  padding: 10px 30px;
+}
+
+main h2 {
+  position: absolute;
+  top: -20px;
+  left: 120px;
+}
+
+main h3 {
+  margin-bottom: 30px;
+}
+
+main div.card {
+  width: 16%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+
+main div.card img {
+  height: 85%;
+}
+
+main div.card p {
+  color: white;
+  text-transform: uppercase;
+  margin: 20px 0px;
+  text-align: center;
+}
+
+div.top {
+  text-transform: uppercase;
+  color: white;
+  display: flex;
+  background-color: #0282f9;
+  justify-content: flex-end;
+}
+
+div.top p {
+  position: relative;
+  right: 10%;
+  padding: 10px 20px;
+}
+
+header {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+header img {
+  margin-right: 250px;
+}
+
+header ul {
+  display: flex;
+}
+
+header li {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid transparent;
+}
+
+header li:hover {
+  color: #0282f9;
+  border-bottom: 2px solid #0282f9;
+  cursor: pointer;
+}
+

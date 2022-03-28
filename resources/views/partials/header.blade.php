@@ -1,12 +1,22 @@
+@php
+    $listaHeader = ["Characters", "Comics", "Movies", "Tv", "Games", "Collectibles", "Videos", "Fans", "News", "Shop"];
+@endphp
+
+<div class="top">
+    <p>DC power visa</p>
+    <p>Additional DC sites</p>
+</div>
+
 <header>
+    
     <img src="{{asset("images/dc-logo.png")}}"  alt="dc-logo">
 
     <nav>
         <ul>
-
-            <li></li>
-            <!--ciclo che scorre lungo la lista passata come parametro in App.vue-->
-            <li v-for="(item,index) in lista" :key="index">{{item}}</li>
+            @foreach ($listaHeader as $item)
+                <li>{{$item}}</li>  
+            @endforeach
+            
         </ul>
     </nav>
 </header>

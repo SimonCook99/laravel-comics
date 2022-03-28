@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
 
     $fumetti = config("comics");
+    
 
     $lists = [
         "listaHeader" => ["Characters", "Comics", "Movies", "Tv", "Games", "Collectibles", "Videos", "Fans", "News", "Shop"],
@@ -27,5 +28,5 @@ Route::get('/', function () {
             "lista4" => ["DC", "Mad Magazine", "DC Kids", "DC Universe", "DC Power visa"]
         ]
     ];
-    return view('home', $fumetti);
+    return view('home', ["fumetti" => $fumetti]);
 });

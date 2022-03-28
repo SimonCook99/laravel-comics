@@ -1,3 +1,10 @@
+@php
+    $lista1 = ["Characters", "Comics", "Movies", "Tv", "Games", "Videos", "News"];
+    $lista2 = ["Shop DC", "Shop DC Collectibles"];
+    $lista3 = ["Terms of use", "Privacy policy (New)","Ad Choices","Advertising","Jobs","Subscriptions","Talent workshops","CPSC certificates","Ratings","Shop helps","contact us"];
+    $lista4 = ["DC", "Mad Magazine", "DC Kids", "DC Universe", "DC Power visa"];
+@endphp
+
 <footer>
     <!-- Footer principale che include le liste e la sezione social (in un altro componente)-->
     <div class="footer-list">
@@ -5,14 +12,19 @@
             <h2>DC comics</h2>
 
             <ul>
-              <!--ciclo che scorre lungo la lista passata come parametro in App.vue-->
-                <li v-for="(lista, index) in lista1" :key="index">{{lista}}</li>
+                
+                @foreach ($lista1 as $item)
+                    <li>{{$item}}</li>
+                @endforeach
+                
             </ul>
 
             <h2>Shop</h2>
 
             <ul>
-                <li v-for="(lista, index) in lista2" :key="index">{{lista}}</li>
+                @foreach ($lista2 as $item)
+                    <li>{{$item}}</li>
+                @endforeach
             </ul>
         </div>
 
@@ -20,7 +32,9 @@
             <h2>DC</h2>
 
             <ul>
-                <li v-for="(lista, index) in lista3" :key="index">{{lista}}</li>
+                @foreach ($lista3 as $item)
+                    <li>{{$item}}</li>
+                @endforeach
             </ul>
 
         </div>
@@ -29,11 +43,13 @@
             <h2>Sites</h2>
 
             <ul>
-                <li v-for="(lista,index) in lista4" :key="index">{{lista}}</li>
+                @foreach ($lista4 as $item)
+                    <li>{{$item}}</li>
+                @endforeach
             </ul>
         </div>
 
-        <img src="../assets/img/dc-logo-bg.png" alt="logo bg">    
+        <img src="{{asset("images/dc-logo-bg.png")}}" alt="logo bg">    
     </div>
 
     <div class="bottom">
@@ -43,11 +59,11 @@
     
         <div class="social">
             <h2>Follow us</h2>
-            <img src="../assets/img/footer-facebook.png" alt="facebook">
-            <img src="../assets/img/footer-twitter.png" alt="facebook">
-            <img src="../assets/img/footer-youtube.png" alt="facebook">
-            <img src="../assets/img/footer-pinterest.png" alt="facebook">
-            <img src="../assets/img/footer-periscope.png" alt="facebook">
+            <img src="{{asset('images/footer-facebook.png')}}" alt="facebook">
+            <img src="{{asset('images/footer-twitter.png')}}" alt="twitter">
+            <img src="{{asset('images/footer-youtube.png')}}" alt="youtube">
+            <img src="{{asset('images/footer-pinterest.png')}}" alt="pinterest">
+            <img src="{{asset('images/footer-periscope.png')}}" alt="periscope">
         </div>
     </div>
     

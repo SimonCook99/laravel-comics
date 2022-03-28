@@ -12,8 +12,8 @@
   
         @foreach ($fumetti as $fumetto)
             <div class="card">
-                <img src="{{$fumetto.thumb}}" alt="{{$fumetto.type}}">
-                <p>{{$fumetto.series}}</p>
+                <img src="{{$fumetto["thumb"]}}" alt="{{$fumetto["type"]}}">
+                <p>{{$fumetto["series"]}}</p>
             </div>   
         @endforeach
         

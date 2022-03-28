@@ -1,0 +1,46 @@
+div.top{
+    text-transform: uppercase;
+    color: white;
+    display: flex;
+    background-color: #0282f9;
+    justify-content: flex-end;
+
+    p{
+        position: relative;
+        right: 10%;
+        padding: 10px 20px;
+    }
+}
+
+header{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+    
+
+    img {
+        margin-right: 250px;
+    }
+
+    ul{
+        display: flex;
+    }
+
+    li{
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        border-bottom: 2px solid transparent;
+
+        &:hover{
+            color: #0282f9;
+            border-bottom: 2px solid #0282f9;
+            cursor: pointer;
+
+        }
+    }
+}
