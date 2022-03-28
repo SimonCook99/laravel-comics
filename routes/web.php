@@ -27,5 +27,5 @@ Route::get('/', function () {
             "lista4" => ["DC", "Mad Magazine", "DC Kids", "DC Universe", "DC Power visa"]
         ]
     ];
-    return view('welcome', $fumetti);
+    return view('home', $fumetti);
 });
