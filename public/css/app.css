@@ -111,6 +111,7 @@ body {
 
 main {
   display: flex;
+  /* background-color: rgba($color: #1c1c1c, $alpha: 1.0); */
   background-color: #1c1c1c;
   position: relative;
   flex-wrap: wrap;
@@ -209,11 +210,14 @@ header li:hover {
   width: 100%;
 }
 
-main {
-  background-color: white;
+.background {
+  position: relative;
+  bottom: 150px;
+  background-color: #f6f6f6;
+  padding: 50px 0px;
 }
 
-main div.content {
+div.content {
   width: 70%;
   margin: auto;
   display: flex;
@@ -221,24 +225,24 @@ main div.content {
   top: -300px;
 }
 
-main div.content img {
+div.content img {
   margin-bottom: 50px;
 }
 
-main div.content h1 {
+div.content h1 {
   margin-bottom: 15px;
 }
 
-main div.content span {
+div.content span {
   padding: 0px 20px;
 }
 
-main div.content p {
+div.content p {
   line-height: 25px;
   margin-top: 15px;
 }
 
-main div.content div.buyDetails {
+div.content div.buyDetails {
   background-color: green;
   padding: 20px;
   color: white;
@@ -246,8 +250,43 @@ main div.content div.buyDetails {
   justify-content: space-between;
 }
 
-main div.content div.right-content {
+div.content div.buyDetails select {
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+
+div.content div.right-content {
   align-self: flex-end;
   margin: 15px;
+}
+
+.credits {
+  width: 70%;
+  margin: auto;
+  display: flex;
+}
+
+.credits a {
+  text-decoration: none;
+}
+
+.credits .talent {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-right: 40px;
+}
+
+.credits .specs {
+  width: 50%;
+}
+
+.credits .specs .series,
+.credits .specs .price,
+.credits .specs .date {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px;
 }
 

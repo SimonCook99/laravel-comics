@@ -36,30 +36,56 @@
         </div>
     </div>
 
-    <div class="credits">
-        <div class="talent">
-            <h4>Talent</h4>
-
-            <hr>
-
-            <div class="artist">
-                <h6>Art by</h6>
-                @foreach ($fumetto['artists'] as $artist)
-                    <a href="#">{{$artist}}</a>
-                @endforeach
+    <div class="background">
+        <div class="credits">
+            <div class="talent">
+                <h4>Talent</h4>
+    
+                <hr>
+    
+                <div class="artist">
+                    <h5>Art by</h5>
+                    @foreach ($fumetto['artists'] as $artist)
+                        <a href="#">{{$artist}}</a>
+                    @endforeach
+    
+                    <hr>
+                </div>
+    
+                <div class="writers">
+                    <h5>Written by</h5>
+                    @foreach ($fumetto['writers'] as $writer)
+                        <a href="#">{{$writer}}</a>
+                    @endforeach
+    
+                    <hr>
+                </div>
             </div>
-
-            <div class="writers">
-                <h6>Written by</h6>
-                @foreach ($fumetto['writers'] as $writer)
-                    <a href="#">{{$writer}}</a>
-                @endforeach
+    
+            <div class="specs">
+                <h4>Specs</h4>
+                <hr>
+    
+                <div class="series">
+                    <h5>Series</h5>
+                    <a href="#" style="text-transform: uppercase">{{$fumetto['series']}}</a>
+                </div>
+                <hr>
+    
+                <div class="price">
+                    <h5>U.S Price</h5>
+                    <h5>{{$fumetto['price']}}</h5>
+                </div>
+                <hr>
+    
+                <div class="date">
+                    <h5>On sale Date</h5>
+                    <h5>{{$fumetto['sale_date']}}</h5>
+                </div>
+                <hr>
             </div>
-        </div>
-
-        <div class="specs">
-            
         </div>
     </div>
+    
 
 @endsection

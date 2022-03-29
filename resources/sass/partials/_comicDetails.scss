@@ -10,45 +10,84 @@
     }
 }
 
-main{
-    background-color: white;
+.background{
+    position: relative;
+    bottom: 150px;
+    background-color: #f6f6f6;
+    padding: 50px 0px;
+}
 
-    div.content{
-        width: 70%;
-        margin: auto;
+div.content{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    position: relative;
+    top: -300px;
+
+    img{
+        margin-bottom: 50px;
+    }
+
+    h1{
+        margin-bottom: 15px;
+    }
+
+    span{
+        padding: 0px 20px;
+    }
+
+    p{
+        line-height: 25px;
+        margin-top: 15px;
+    }
+
+    div.buyDetails{
+        background-color: green;
+        padding: 20px;
+        color: white;
         display: flex;
-        position: relative;
-        top: -300px;
+        justify-content: space-between;
 
-        img{
-            margin-bottom: 50px;
-        }
-
-        h1{
-            margin-bottom: 15px;
-        }
-
-        span{
-            padding: 0px 20px;
-        }
-
-        p{
-            line-height: 25px;
-            margin-top: 15px;
-        }
-
-        div.buyDetails{
-            background-color: green;
-            padding: 20px;
+        select{
+            border: none;
+            background-color: transparent;
             color: white;
+        }
+        
+    }
+
+    div.right-content{
+        align-self: flex-end;
+        margin: 15px;
+    }
+}
+
+
+.credits{
+    width: 70%;
+    margin: auto;
+    display: flex;
+
+    a{
+        text-decoration: none;
+    }
+
+    .talent{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin-right: 40px;
+    }
+
+    .specs{
+        width: 50%;
+
+        .series, .price, .date{
             display: flex;
             justify-content: space-between;
-            
-        }
+            margin: 10px 0px;
 
-        div.right-content{
-            align-self: flex-end;
-            margin: 15px;
+            
         }
     }
 }
