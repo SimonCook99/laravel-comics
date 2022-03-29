@@ -9,11 +9,19 @@
 
     <main>
         <h2>Current series</h2>
+
+        {{-- @dump($fumetti); --}}
   
-        @foreach ($fumetti as $fumetto)
+        @foreach ($fumetti as $key => $fumetto)
+
             <div class="card">
-                <img src="{{$fumetto["thumb"]}}" alt="{{$fumetto["type"]}}">
-                <p>{{$fumetto["series"]}}</p>
+
+                {{-- il link del tag a punta a una route "fumetto", seguito dalla chiave che indentifica il singolo fumetto ($key)--}}
+                <a href="/fumetto/{{$key}}" style="text-decoration: none">
+                    <img src="{{$fumetto["thumb"]}}" alt="{{$fumetto["type"]}}">
+                    <p>{{$fumetto["series"]}}</p>
+                </a>
+                
             </div>   
         @endforeach
         

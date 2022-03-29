@@ -25,7 +25,7 @@ section.buy-section li p {
 }
 
 .footer-list {
-  background-image: url(/images/footer-bg.jpg?dfd68d2946f211e1b678af05fd2f830b);
+  background-image: url("/images/footer-bg.jpg");
   display: flex;
   justify-content: center;
   padding: 30px;
@@ -105,7 +105,7 @@ body {
 .jumbotron {
   width: 100%;
   height: 50vh;
-  background-image: url(/images/jumbotron.jpg?1b0a3671766964a4114f90322970b124);
+  background-image: url("/images/jumbotron.jpg");
   background-size: cover;
 }
 
@@ -195,5 +195,59 @@ header li:hover {
   color: #0282f9;
   border-bottom: 2px solid #0282f9;
   cursor: pointer;
+}
+
+.jumbotron {
+  position: relative;
+}
+
+.jumbotron div {
+  position: absolute;
+  bottom: 0;
+  background-color: #0282f9;
+  height: 50px;
+  width: 100%;
+}
+
+main {
+  background-color: white;
+}
+
+main div.content {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  position: relative;
+  top: -300px;
+}
+
+main div.content img {
+  margin-bottom: 50px;
+}
+
+main div.content h1 {
+  margin-bottom: 15px;
+}
+
+main div.content span {
+  padding: 0px 20px;
+}
+
+main div.content p {
+  line-height: 25px;
+  margin-top: 15px;
+}
+
+main div.content div.buyDetails {
+  background-color: green;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+main div.content div.right-content {
+  align-self: flex-end;
+  margin: 15px;
 }
 

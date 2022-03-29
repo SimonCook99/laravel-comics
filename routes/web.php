@@ -30,3 +30,17 @@ Route::get('/', function () {
     ];
     return view('home', ["fumetti" => $fumetti]);
 });
+
+
+//La sezione del link chiusa tra {} indica una parte del link variabile, che possiamo recuperare tramite la funzione anonima (purchè con lo stesso nome)
+Route::get("/fumetto/{comicID}", function($comicID){
+    $fumetti = config("comics");
+
+    if(is_numeric($comicID) && $comicID >= 0 && $comicID < count($fumetti)){
+        $fumetto = $fumetti[$comicID];
+
+        return view("comicDetails", ["fumetto" => $fumetto]);
+    }else{
+        abort(404, "Risorsa non trovata");
+    }
+});
